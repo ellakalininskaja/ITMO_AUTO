@@ -1,5 +1,7 @@
 class Checks:
-    name = "Млекопитающие"
+    def __init__(self):
+        self.loc = None
 
-    def __init__(self, name):
-        self.name = name
+    def check_text(self, loc: str = ''):
+        self.loc = loc
+        print('check_text:', self.loc)
